@@ -43,6 +43,6 @@ end
 timestamp = Time.now.utc.iso8601
 
 to_field "id", extract_xpath("//dcterms:identifier"), first_only
-to_field "payload_s", &-> (r, acc) { acc << r.to_s }
-to_field "timestamp_dt", &-> (_, acc) { acc << timestamp }
-to_field "set_ss", &-> (_, acc) { acc << ENV.fetch("FUNCAKE_OAI_SET", "dpla_test") }
+to_field "payload_ss", &-> (r, acc) { acc << r.root.to_xml }
+to_field "timestamp", &-> (_, acc) { acc << timestamp }
+to_field "set_ssim", &-> (_, acc) { acc << ENV.fetch("FUNCAKE_OAI_SET", "dpla_test") }
