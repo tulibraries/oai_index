@@ -7,10 +7,10 @@ RSpec.describe OaiIndex do
 
   describe "ingest" do
     before(:example) do
-      @indexer = instance_double("Traject::Indexer::MarcIndexer")
+      @indexer = instance_double("Traject::Indexer::NokogiriIndexer")
       @io = instance_double(IO)
 
-      allow(Traject::Indexer::MarcIndexer).to receive(:new).and_return(@indexer)
+      allow(Traject::Indexer::NokogiriIndexer).to receive(:new).and_return(@indexer)
       allow(@indexer).to receive_messages(load_config_file: "", process: "")
       allow(@io).to receive_messages(read: "")
       allow(OaiIndex::CLI).to receive_messages(open: @io)
@@ -27,14 +27,14 @@ RSpec.describe OaiIndex do
 
     context "commit is not set" do
       it "passes solr_writer.commit_on_close: false by default" do
-        expect(Traject::Indexer::MarcIndexer).to receive(:new).with("solr_writer.commit_on_close": false)
+        expect(Traject::Indexer::NokogiriIndexer).to receive(:new).with("solr_writer.commit_on_close": false)
       end
     end
 
 
     context "commit is true" do
       it "passes solr_writer.commit_on_close: true" do
-        expect(Traject::Indexer::MarcIndexer).to receive(:new).with("solr_writer.commit_on_close": true)
+        expect(Traject::Indexer::NokogiriIndexer).to receive(:new).with("solr_writer.commit_on_close": true)
         OaiIndex::CLI.ingest(commit: true)
       end
     end
