@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-require 'traject/indexer/nokogiri_indexer'
+
+require "traject/indexer/nokogiri_indexer"
 
 RSpec.describe "Traject configuration" do
   let(:indexer) { Traject::Indexer::NokogiriIndexer.new }

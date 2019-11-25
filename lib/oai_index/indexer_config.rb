@@ -24,9 +24,9 @@ settings do
     provide "solr_writer.basic_auth_password", ENV["SOLR_AUTH_PASSWORD"]
   end
 
-	provide "nokogiri.namespaces",
-					"oai" => "http://www.openarchives.org/OAI/2.0/",
-					"dc" => "http://purl.org/dc/elements/1.1/",
+  provide "nokogiri.namespaces",
+          "oai" => "http://www.openarchives.org/OAI/2.0/",
+          "dc" => "http://purl.org/dc/elements/1.1/",
           "dcterms" => "http://purl.org/dc/terms/",
           "oai_dc" => "http://www.openarchives.org/OAI/2.0/oai_dc/",
           "edm" => "http://www.europeana.eu/schemas/edm/",
