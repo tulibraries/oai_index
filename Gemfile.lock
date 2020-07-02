@@ -158,7 +158,6 @@ PLATFORMS
 
 DEPENDENCIES
   binding_of_caller (~> 0.7)
-  bundler (>= 1.16)
   coveralls
   guard (~> 2.14)
   guard-rspec (~> 4.7)
