@@ -1,6 +1,6 @@
 # OaiIndex
-[![Build Status](https://travis-ci.org/tulibraries/oai_index.svg?branch=master)](https://travis-ci.org/tulibraries/oai_index)
-[![Coverage Status](https://coveralls.io/repos/github/tulibraries/oai_index/badge.svg?branch=master)](https://coveralls.io/github/tulibraries/oai_index?branch=master)
+[![Build Status](https://travis-ci.org/tulibraries/oai_index.svg?branch=main)](https://travis-ci.org/tulibraries/oai_index)
+[![Coverage Status](https://coveralls.io/repos/github/tulibraries/oai_index/badge.svg?branch=main)](https://coveralls.io/github/tulibraries/oai_index?branch=main)
 
 Oai Index is a repository to hold the traject configuration files and scripts
 associated with indexing for dpla oai server.
@@ -52,4 +52,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the CobIndex project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/tulibraries/oai_index/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the CobIndex project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/tulibraries/oai_index/blob/main/CODE_OF_CONDUCT.md).
