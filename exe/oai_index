@@ -32,7 +32,7 @@ class App
         delete: options[:delete],
       )
 
-      OaiIndex::CLI.ingest(opts)
+      OaiIndex::CLI.ingest(**opts)
     end
   end
 
