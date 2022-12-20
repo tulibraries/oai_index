@@ -13,7 +13,7 @@ RSpec.describe OaiIndex do
       allow(Traject::Indexer::NokogiriIndexer).to receive(:new).and_return(@indexer)
       allow(@indexer).to receive_messages(load_config_file: "", process: "")
       allow(@io).to receive_messages(read: "")
-      allow(OaiIndex::CLI).to receive_messages(open: @io)
+      allow(URI).to receive_messages(open: @io)
     end
 
     after(:example) do
