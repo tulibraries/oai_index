@@ -10,7 +10,7 @@ module OaiIndex
       indexer.load_config_file("#{File.dirname(__FILE__)}/oai_index/indexer_config.rb")
       indexer.writer.delete(query: "*:*") if delete
 
-      indexer.process(StringIO.new(open(ARGV[0]).read))
+      indexer.process(StringIO.new(URI.open(ARGV[0]).read))
     end
   end
 end
