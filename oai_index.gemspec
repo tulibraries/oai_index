@@ -38,12 +38,13 @@ Gem::Specification.new do |spec|
   spec.executables << "oai_index"
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "traject", "~> 3.1"
-  spec.add_dependency "library_stdnums", "~> 1.6"
-  spec.add_runtime_dependency("gli", "~> 2.18")
+  spec.add_dependency "traject"
+  spec.add_dependency "library_stdnums"
+  spec.add_runtime_dependency("gli")
 
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rubocop", "~> 1.35"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rubocop"
   spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "base64", "0.1.0"
 end
