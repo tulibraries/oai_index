@@ -46,5 +46,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rubocop"
   spec.add_development_dependency "coveralls"
-  spec.add_development_dependency "base64", "0.1.0"
+  spec.add_development_dependency "base64", "0.2.0"
 end
