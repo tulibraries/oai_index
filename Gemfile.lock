@@ -101,7 +101,7 @@ GEM
       ast (~> 2.4.1)
       racc
     prism (1.4.0)
-    pry (0.14.2)
+    pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
     pry-byebug (3.11.0)
@@ -186,7 +186,7 @@ DEPENDENCIES
   guard (~> 2.19)
   guard-rspec (~> 4.7)
   oai_index!
-  pry (~> 0.14)
+  pry (~> 0.15)
   pry-byebug (~> 3.11)
   rake
   rspec
