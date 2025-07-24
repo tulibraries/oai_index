@@ -4,9 +4,6 @@ on:
   push:
     branches-ignore:
       - main
-  pull_request:
-    types: [ opened, reopened ]
-    branches: [ main ]
   workflow_dispatch: {}
   
 env:
@@ -47,4 +44,4 @@ jobs:
           bundler-cache: true
 
       - name: Run tests
-        run: bundle exec rspec
+        run: bundle exec rspec spec
