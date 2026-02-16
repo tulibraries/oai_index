@@ -14,7 +14,7 @@ GEM
     ast (2.4.3)
     base64 (0.3.0)
     bigdecimal (3.2.2)
-    binding_of_caller (1.0.1)
+    binding_of_caller (2.0.0)
       debug_inspector (>= 1.2.0)
     byebug (13.0.0)
       reline (>= 0.6.0)
@@ -212,7 +212,7 @@ PLATFORMS
 
 DEPENDENCIES
   base64 (= 0.3.0)
-  binding_of_caller (~> 1.0)
+  binding_of_caller (~> 2.0)
   coveralls
   guard (~> 2.20)
   guard-rspec (~> 4.7)
