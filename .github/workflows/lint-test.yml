@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        ruby-version: ['3.4']
+        ruby-version: [3.4]
     steps:
       - uses: actions/checkout@v4
       - name: Setup Ruby
@@ -33,7 +33,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        ruby-version: ['3.4']
+        ruby-version: [3.4]
 
     steps:
       - uses: actions/checkout@v4
